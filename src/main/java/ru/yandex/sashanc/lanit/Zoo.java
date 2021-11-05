@@ -41,11 +41,17 @@ public class Zoo {
             logger.info(soundingAnimal.voice());
         }
 
-        for (Animal animal : animalList) {
-            worker.feed(animal, grass);
-            worker.feed(animal, meat);
-            logger.info(animal.getFullness());
+
+        try {
+            for (Animal animal : animalList) {
+                worker.feed(animal, grass);
+                worker.feed(animal, meat);
+                logger.info(animal.getFullness());
+            }
+        } catch (WrongFoodException e) {
+            logger.warn("WrongFoodException is occurred", e);
         }
+
 
         //java-homework-3
         logger.info("================ java-homework-3 ================");

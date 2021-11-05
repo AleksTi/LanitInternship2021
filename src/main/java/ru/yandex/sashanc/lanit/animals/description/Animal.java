@@ -34,7 +34,7 @@ public abstract class Animal {
         this.fullness = fullness;
     }
 
-    public abstract void eat(Food food);
+    public abstract void eat(Food food) throws WrongFoodException;
 
     @Override
     public boolean equals(Object o) {
