@@ -4,8 +4,13 @@ import ru.yandex.sashanc.lanit.animals.description.Herbivore;
 import ru.yandex.sashanc.lanit.animals.description.IFly;
 import ru.yandex.sashanc.lanit.animals.description.ISwim;
 import ru.yandex.sashanc.lanit.animals.description.IVoice;
+import ru.yandex.sashanc.lanit.aviary.AviaryScale;
 
 public class Duck extends Herbivore implements IVoice, ISwim, IFly {
+
+    public Duck(String idName, AviaryScale size) {
+        super(idName, size);
+    }
 
     @Override
     public String fly() {
@@ -21,4 +26,6 @@ public class Duck extends Herbivore implements IVoice, ISwim, IFly {
     public String voice() {
         return "I am a Duck, I made a sound Buck-buck";
     }
+
+
 }
