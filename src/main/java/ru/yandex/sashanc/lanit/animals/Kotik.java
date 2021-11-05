@@ -16,6 +16,10 @@ public class Kotik {
     private int weight;
     private String meow;
 
+    static {
+        counter = 0;
+    }
+
     public Kotik() {
         this.random = new Random();
         counter++;
