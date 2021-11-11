@@ -29,8 +29,8 @@ public class Main {
                     logger.info("Второе число: " + d2);
                     logger.info("Сумма " + d1 + " + " + d2 + " = " + calculator.sum(d1, d2));
                     logger.info("Деление " + d1 + " / " + d2 + " = " + calculator.divide(d1, d2));
-                    logger.info("Произведение " + d1 + " * " + d2 + " = " + calculator.multiply((int) d1, (int) d2));
-                    logger.info("Разность " + d1 + " - " + d2 + " = " + calculator.subtract((int) d1, (int) d2));
+                    logger.info("Произведение " + d1 + " * " + d2 + " = " + calculator.multiply(d1, d2));
+                    logger.info("Разность " + d1 + " - " + d2 + " = " + calculator.subtract(d1, d2));
                 }
             } else {
                 if(inputResult.equals("exit")){
